@@ -12,7 +12,7 @@ public class Movie {
      private double rating;
      private double sellingPrice;
      private double rentalPrice;
-     private boolean isAvailable ;
+     private boolean isAvailable = true;
      
      public Movie(String name, String format, double rating){
          if(name == null || name.isEmpty()){
