@@ -34,12 +34,13 @@ public class Store {
             if(movies.get(i).getName().equals(movieName)){
                switch(action){
                    case "sell" : this.movies.remove(i);
-                   movies.get(i).setIsAvailable(true);
                    break;
                    case "rent" : movies.get(i).setIsAvailable(false);
                    break;
                    case "return" : movies.get(i).setIsAvailable(true);
                    break;
+                   default:
+                       System.out.println("INVALID ACTION...");
                }
 
             }
